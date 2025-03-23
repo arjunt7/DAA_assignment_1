@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Algorithm 1</title>
+  <link rel="icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+    <hr class="style-seven  style-seven:before">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"> The worst-case time complexity for generating all maximal cliques
+                and computational experiments</h1>
+            <div class="is-size-5 publication-authors">
+              
+              <span class="author-block">
+                Etsuji Tomita, </span>
+                <span class="author-block">
+                 Akira Tanaka, </span>
+                  <span class="author-block">
+                    Haruhisa Takahashi
+                  </span>
+                  </div>
+                 
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">The University of Electro-Communications, Department of Information and Communication Engineering, Chofugaoka 1-5-1, Chofu<br> Tokyo 182-8585, Japan</span>
+                    
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                    <span class="link-block">
+                      <a href="https://snap.stanford.edu/class/cs224w-readings/tomita06cliques.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                  
+                  <span class="link-block">
+                    <a href="https://github.com/arjunt7/DAA_assignment_1/blob/main/group-7/codes/q1.cpp" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="style-seven  style-seven:before">
+
+  
+<hr class="style-seven  style-seven:before">
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present a depth-first search algorithm for generating all maximal cliques of an undirected graph, in which pruning methods
+            are employed as in the Bron–Kerbosch algorithm. All the maximal cliques generated are output in a tree-like form. Subsequently,
+            we prove that its worst-case time complexity is O(3^(n/3)) for an n-vertex graph. This is optimal as a function of n, since there exist
+            up to 3n/3 maximal cliques in an n-vertex graph. The algorithm is also demonstrated to run very fast in practice by computational
+            experiments.
+          </p>
+        </div>
+        <br>
+        <h2 class="title is-3">complexity: O(3^(n/3))</h2>
+        <p>n is the number of vertices in the graph</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="style-seven  style-seven:before">
+<div class="container" style="margin-top: 70px;">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <h1>Performance of the Bron-Kerbosch Algorithm with pivot on Various Datasets</h1>
+       
+          <h3>Dataset 1: Enron email network Dataset (nodes:36692, edges:183831 ,undirected graph)</h3>
+          <p>
+            <strong>Time:</strong> Algorithm took 35.394s to identify all the maximal cliques.
+          </p>
+          <p>
+            <strong>Number of maximal cliques:</strong> The algorithm identified 226859 maximal cliques.
+          </p>
+          <p>
+            <strong>maximum length :</strong> 20.
+          </p>
+        
+          <h3>Dataset 2: Autonomous Systems (nodes:1696415, edges:11095298 ,undirected graph)</h3>
+          <strong>Time:</strong> Algorithm took 17364.7s to identify all the maximal cliques.
+        </p>
+        <p>
+          <strong>Number of maximal cliques:</strong> The algorithm identified 37322355 maximal cliques.
+        </p>
+        <p>
+          <strong>maximum length :</strong> 67
+          
+          <h3>Dataset 3: Wikipedia voting Dataset (nodes:7115, edges:103689 ,directed graph)</h3>
+          <strong>Time:</strong> Algorithm took 12.184s to identify all the maximal cliques.
+        </p>
+        <p>
+          <strong>Number of maximal cliques:</strong> The algorithm identified 459002 maximal cliques.
+        </p>
+        <p>
+          <strong>maximum length :</strong> 17.
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <hr class="style-seven  style-seven:before">
+<br>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel items">
+       <div class="item " style="margin-left: 240px;">
+        
+        <img src="static/images/email_data.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle" style="margin-left: 150px; margin-top: 20px;">
+            Histogram for the <strong>Enron email network Dataset</strong>  
+        </h2>
+      </div>
+      <div class="item " style=" margin-top: 50px; ">
+      
+        <img src="static/images/as.png" alt="MY ALT TEXT" style="margin-left: 200px; margin-top: 50px;"/>
+        <h2 class="subtitle" style="margin-left: 450px; margin-top: 20px;">
+            Histogram for the <strong>Autonomous Systems</strong> 
+        </h2>
+      </div>
+      <div class="item " style="margin-left: 230px; ">
+       
+        <img src="static/images/Wiki-Vote_data.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle" style="margin-left: 200px; margin-top: 20px;">
+         Histogram for the <strong>Wikipedia voting Dataset</strong>
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+
+<hr class="style-seven  style-seven:before">
+ <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Histogram for timing</h2>
+      <br>
+      <iframe  src="static/images/image.png" width="100%" height="550" style="margin-left: 200px;">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> 
+  <hr class="style-seven  style-seven:before">
+   <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">System info:</h2>
+      <pre><code>Linux taanvi-HP-Laptop-15-hr0xxx 6.8.0-52-generic #53-Ubuntu SMP PREEMPT_DYNAMIC Sat Jan 11 00:06:25 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux.
+      All the algorithms have been implemented on a computer with an Intel Core i5-13th Gen processor, 15 GB of RAM, running on Ubuntu 24.04 OS.
+      </code></pre>
+    </div>
+</section> 
+
+<hr class="style-seven  style-seven:before">
+
+  </body>
+  </html>
